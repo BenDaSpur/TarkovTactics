@@ -11,7 +11,7 @@
 <Nav {segment} />
 
 <main>
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
     <slot />
   </div>
 </main>

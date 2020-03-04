@@ -32,6 +32,9 @@
   <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
     <Nav class="ml-auto" navbar>
       <NavItem>
+        <NavLink href="/">Home</NavLink>
+      </NavItem>
+      <NavItem>
         <NavLink href="gear">Gear</NavLink>
       </NavItem>
       <NavItem>
