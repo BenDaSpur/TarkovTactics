@@ -11,7 +11,7 @@
   let photos = [];
 
   onMount(async () => {
-    Array.from(document.getElementsByClassName("gun-link")).forEach(function(
+    Array.from(document.getElementsByClassName("item-link")).forEach(function(
       element,
       index,
       array
@@ -38,7 +38,7 @@
       <Col>
         {#each guncat.guns as gun}
           <div>
-            <a class="gun-link" href="/items/guns/">{gun}</a>
+            <a class="item-link" href="/items/guns/">{gun}</a>
           </div>
         {/each}
       </Col>
