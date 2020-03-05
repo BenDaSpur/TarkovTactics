@@ -17,6 +17,16 @@
   export let post;
   import Image from "svelte-image";
   import { Col, Container, Row } from "sveltestrap/src";
+  import maps from "./names.js";
+
+  // let image_array = [];
+  // // alert(maps[0].name);
+  // switch (window.location) {
+  //   case "maps/factory":
+  //     image_array = maps[0].maps;
+  //   default:
+  //     break;
+  // }
 </script>
 
 <style>

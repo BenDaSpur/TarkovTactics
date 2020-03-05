@@ -2,7 +2,15 @@
   import { onMount } from "svelte";
 
   import guns from "./guns.js";
-  import { Col, Container, Row } from "sveltestrap/src/";
+  import {
+    Col,
+    Container,
+    Row,
+    UncontrolledCollapse,
+    Button,
+    CardBody,
+    Card
+  } from "sveltestrap/src/";
 
   function encode(text) {
     return encodeURI(text);
@@ -19,10 +27,16 @@
       element.href = element.href + encodeURI(element.innerText);
     });
   });
+
+  function cleanUp(name) {
+    return name.replace(/[^\w\s]/gi, "").replace(/ /g, "");
+  }
 </script>
 
 <style>
-
+  .item-link:hover {
+    color: black;
+  }
 </style>
 
 <svelte:head>
@@ -33,14 +47,21 @@
   {#each guns as guncat}
     <Row class="my-5">
       <Col>
-        <h2>{guncat.name}</h2>
-      </Col>
-      <Col>
-        {#each guncat.guns as gun}
-          <div>
-            <a class="item-link" href="/items/guns/">{gun}</a>
-          </div>
-        {/each}
+        <!-- <h2>{guncat.name}</h2> -->
+        <Button color="warning" id={cleanUp(guncat.name)} class="mb-3">
+          {guncat.name}
+        </Button>
+        <UncontrolledCollapse toggler={cleanUp(guncat.name)}>
+          <Card body>
+            {#each guncat.guns as gun}
+              <div>
+                <a class="item-link" href={'/items/guns/' + cleanUp(gun)}>
+                  {gun}
+                </a>
+              </div>
+            {/each}
+          </Card>
+        </UncontrolledCollapse>
       </Col>
     </Row>
   {/each}
