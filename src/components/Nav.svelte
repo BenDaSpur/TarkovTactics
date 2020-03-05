@@ -44,7 +44,9 @@
         <NavLink href="loadout">Loadout Builder</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="https://github.com/BenDaSpur/TarkovTactics">
+        <NavLink
+          href="https://github.com/BenDaSpur/TarkovTactics"
+          target="_blank">
           GitHub
         </NavLink>
       </NavItem>

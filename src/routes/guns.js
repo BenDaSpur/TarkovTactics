@@ -13,8 +13,12 @@ const guns = [
       "Stechkin APB",
       "SR-1MP",
       "Beretta M9A3",
-      "FN Five-seveN",
-      "Submachine Guns",
+      "FN Five-seveN"
+    ]
+  },
+  {
+    name: "Submachine Guns",
+    guns: [
       "Heckler & Koch MP5",
       "Heckler & Koch MP5SD5",
       "Heckler & Koch MP5K",
