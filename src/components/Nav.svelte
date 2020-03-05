@@ -43,6 +43,11 @@
       <NavItem>
         <NavLink href="loadout">Loadout Builder</NavLink>
       </NavItem>
+      <NavItem>
+        <NavLink href="https://github.com/BenDaSpur/TarkovTactics">
+          GitHub
+        </NavLink>
+      </NavItem>
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>Maps</DropdownToggle>
         <DropdownMenu right>

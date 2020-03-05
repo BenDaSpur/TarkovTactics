@@ -15,8 +15,8 @@
 
 <script>
   export let post;
-
-  import { Col, Container, Row } from "sveltestrap";
+  import Image from "svelte-image";
+  import { Col, Container, Row } from "sveltestrap/src";
 </script>
 
 <style>
@@ -69,7 +69,8 @@
           <Col>
             <a href="/{post.name}/{map}" target="_blank">
               {#if map.includes('.jpg') || map.includes('.png')}
-                <img class="img-fluid" src="/{post.name}/{map}" alt={map} />
+                <Image src="{post.name}/{map}" />
+                <!-- <img class="img-fluid" src="/{post.name}/{map}" alt={map} /> -->
               {/if}
               {map}
             </a>
