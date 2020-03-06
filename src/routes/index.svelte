@@ -45,14 +45,14 @@
 
 <Container>
   {#each guns as guncat}
-    <Row class="my-5">
+    <Row class="">
       <Col>
         <!-- <h2>{guncat.name}</h2> -->
         <Button color="warning" id={cleanUp(guncat.name)} class="mb-3">
           {guncat.name}
         </Button>
         <UncontrolledCollapse toggler={cleanUp(guncat.name)}>
-          <Card body>
+          <Card class="my-3" body>
             {#each guncat.guns as gun}
               <div>
                 <a class="item-link" href={'/items/guns/' + cleanUp(gun)}>

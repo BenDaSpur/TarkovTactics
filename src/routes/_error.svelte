@@ -27,7 +27,7 @@
 
 <p>{error.message}</p>
 
-<div class="col-3">
+<div class="col-lg-3">
   <Image src="/404.jpg" />
 
 </div>
