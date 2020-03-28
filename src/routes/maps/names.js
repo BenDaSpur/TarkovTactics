@@ -47,7 +47,7 @@ const maps = [
     players: "10-14",
     enemies: ["Scavs", "Killa"],
     state: "Released",
-    maps: ["overview.jpg"]
+    maps: ["overview.jpg", "stashes.jpg"]
   },
   {
     name: "the lab",
