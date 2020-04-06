@@ -7,7 +7,7 @@ const maps = [
     players: "4-6",
     enemies: "Scavs",
     state: "Released",
-    maps: ["ingame-with-callouts.png", "ingame.jpg"]
+    maps: ["ingame-with-callouts.png", "ingame.jpg"],
   },
   {
     name: "customs",
@@ -17,7 +17,7 @@ const maps = [
     players: "7-12",
     enemies: ["Scavs", "Reshala"],
     state: "Released",
-    maps: ["DormsLayout.jpg", "overview.png"]
+    maps: ["DormsLayout.jpg", "overview.png"],
   },
   {
     name: "woods",
@@ -27,7 +27,7 @@ const maps = [
     players: "8-12",
     enemies: ["Scavs", "Shturman"],
     state: "Released",
-    maps: ["overview.jpg"]
+    maps: ["overview.jpg"],
   },
   {
     name: "shoreline",
@@ -37,7 +37,7 @@ const maps = [
     players: "10-13",
     enemies: "Scavs",
     state: "Released",
-    maps: ["overview.png"]
+    maps: ["overview.png"],
   },
   {
     name: "interchange",
@@ -47,7 +47,7 @@ const maps = [
     players: "10-14",
     enemies: ["Scavs", "Killa"],
     state: "Released",
-    maps: ["overview.jpg", "stashes.jpg"]
+    maps: ["InterchangeDark.jpg", "overview.jpg", "stashes.jpg"],
   },
   {
     name: "the lab",
@@ -57,7 +57,7 @@ const maps = [
     players: "6-10",
     enemies: "Scav Raiders",
     state: "Released",
-    maps: []
+    maps: [],
   },
   {
     name: "reserve",
@@ -67,7 +67,7 @@ const maps = [
     players: "9-12",
     enemies: ["Scavs", "Scav Raiders", "Gluhar"],
     state: "Released",
-    maps: ["overview.jpg"]
+    maps: ["overview.jpg"],
   },
   {
     name: "hideout",
@@ -77,8 +77,8 @@ const maps = [
     players: "?",
     enemies: "?",
     state: "Released",
-    maps: ["items-to-keep.jpg", "DevTree.png"]
-  }
+    maps: ["items-to-keep.jpg", "DevTree.png"],
+  },
 ];
 
 export default maps;
