@@ -13,8 +13,8 @@ const guns = [
       "Stechkin APB",
       "SR-1MP",
       "Beretta M9A3",
-      "FN Five-seveN"
-    ]
+      "FN Five-seveN",
+    ],
   },
   {
     name: "Submachine Guns",
@@ -30,8 +30,8 @@ const guns = [
       "SIG-Sauer MPX",
       "SIG-Sauer MPX-SD",
       "FN P90",
-      "Brügger & Thomet MP9"
-    ]
+      "Brügger & Thomet MP9",
+    ],
   },
   {
     name: "Assault Rifles",
@@ -58,8 +58,8 @@ const guns = [
       "Desert Tech Micro Dynamic Rifle .308",
       "ShAK-12",
       "Magpul Masada",
-      "DSA SA58 OSW"
-    ]
+      "DSA SA58 OSW",
+    ],
   },
   {
     name: "Designated Marksman Rifles",
@@ -70,14 +70,18 @@ const guns = [
       "SVD Dragunov",
       "SVDS",
       "SR-25",
-      "Bolt action sniper rifles",
+    ],
+  },
+  {
+    name: "Bolt Action Sniper Rifles",
+    guns: [
       "SV-98",
       "Lobaev DVL-10",
       "Mosin-Nagant M91/30",
       "Remington Model 700",
       "Orsis T-5000",
-      "VPO-215 Gornostay"
-    ]
+      "VPO-215 Gornostay",
+    ],
   },
   {
     name: "Assault Carbines",
@@ -88,12 +92,12 @@ const guns = [
       "ADAR 2-15",
       "Lone Star Armory TX-15 DML",
       'VPO-101 "Vepr Hunter"',
-      "Ruger Mini-14"
-    ]
+      "Ruger Mini-14",
+    ],
   },
   {
     name: "Machine Guns",
-    guns: ["RPK-16", "PKP Pecheneg"]
+    guns: ["RPK-16", "PKP Pecheneg"],
   },
   {
     name: "Shotguns",
@@ -102,8 +106,8 @@ const guns = [
       "Baikal MP-153",
       "Saiga 12K",
       "Remington 870",
-      "TOZ-106"
-    ]
+      "TOZ-106",
+    ],
   },
   {
     name: "Grenades & Explosives",
@@ -114,13 +118,13 @@ const guns = [
       "M67 Hand Grenade",
       "Zarya-2 Stun Grenade",
       "Grenade Launcher",
-      "RPG-7"
-    ]
+      "RPG-7",
+    ],
   },
   {
     name: "Mounted Weapons",
-    guns: ["AGS-30", "M242 Bushmaster chaingun", "Kord heavy machine gun"]
-  }
+    guns: ["AGS-30", "M242 Bushmaster chaingun", "Kord heavy machine gun"],
+  },
 ];
 
 export default guns;
