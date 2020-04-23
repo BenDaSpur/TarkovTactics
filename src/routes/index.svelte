@@ -28,8 +28,16 @@
     });
   });
 
+  function encodeUrl(name) {
+    return encodeURIComponent(encodeURIComponent(name)).toLowerCase();
+    // return name.replace(/[^\w\s]/gi, "").replace(/ /g, "_");
+  }
+
   function cleanUp(name) {
-    return name.replace(/[^\w\s]/gi, "").replace(/ /g, "");
+    return name
+      .replace(/[^\w\s]/gi, "")
+      .replace(/ /g, "_")
+      .toLowerCase();
   }
 </script>
 
@@ -55,7 +63,9 @@
           <Card class="my-3" body>
             {#each guncat.guns as gun}
               <div>
-                <a class="item-link" href={'/items/guns/' + cleanUp(gun)}>
+                <a
+                  class="item-link"
+                  href={'/guns/' + cleanUp(guncat.name) + '/' + encodeUrl(gun)}>
                   {gun}
                 </a>
               </div>
