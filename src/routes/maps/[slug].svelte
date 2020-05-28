@@ -77,13 +77,11 @@
       <Row>
         {#each post.maps as map}
           <Col>
-            <a href="/{post.name}/{map}" target="_blank">
-              {#if map.includes('.jpg') || map.includes('.png')}
-                <Image src="{post.name}/{map}" />
-                <!-- <img class="img-fluid" src="/{post.name}/{map}" alt={map} /> -->
-              {/if}
-              {map}
-            </a>
+            <a href="/{post.name}/{map}" target="_blank">{map}</a>
+            {#if map.includes('.jpg') || map.includes('.png')}
+              <Image src="{post.name}/{map}" />
+              <!-- <img class="img-fluid" src="/{post.name}/{map}" alt={map} /> -->
+            {/if}
           </Col>
         {/each}
       </Row>
