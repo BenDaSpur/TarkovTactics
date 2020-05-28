@@ -77,7 +77,7 @@ const maps = [
     players: "?",
     enemies: "?",
     state: "Released",
-    maps: ["items-to-keep.jpg", "DevTree.png"],
+    maps: ["items-to-keep.jpg", "DevTree.png", "bitcoin_chart.png"],
   },
 ];
 
