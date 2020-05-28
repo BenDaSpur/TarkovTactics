@@ -76,7 +76,7 @@
 
       <Row>
         {#each post.maps as map}
-          <Col>
+          <Col md={12 / post.maps.length}>
             <a href="/{post.name}/{map}" target="_blank">{map}</a>
             {#if map.includes('.jpg') || map.includes('.png')}
               <Image src="{post.name}/{map}" />
