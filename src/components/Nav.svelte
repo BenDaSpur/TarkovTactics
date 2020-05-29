@@ -20,6 +20,7 @@
   }
   //   export let segment;
   import maps from "../routes/maps/names.js";
+  import quests from "../routes/quests/quests.js";
 </script>
 
 <style>
@@ -40,6 +41,7 @@
       <NavItem>
         <NavLink href="items">Items</NavLink>
       </NavItem>
+
       <NavItem>
         <NavLink href="loadout">Loadout Builder</NavLink>
       </NavItem>
@@ -50,6 +52,19 @@
           GitHub
         </NavLink>
       </NavItem>
+      <UncontrolledDropdown nav inNavbar>
+        <DropdownToggle nav caret>Quests</DropdownToggle>
+        <DropdownMenu right>
+          {#each quests as quest}
+            <DropdownItem class="maps-link" href="/quests/{quest.name}">
+              {quest.name}
+            </DropdownItem>
+          {/each}
+          <DropdownItem class="maps-link" href="/quests">
+            All Quests
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>Maps</DropdownToggle>
         <DropdownMenu right>
