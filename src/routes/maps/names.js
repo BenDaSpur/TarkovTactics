@@ -37,7 +37,7 @@ const maps = [
     players: "10-13",
     enemies: "Scavs",
     state: "Released",
-    maps: ["overview.png"],
+    maps: ["overview.png", "loot_and_caches.jpg"],
   },
   {
     name: "interchange",
