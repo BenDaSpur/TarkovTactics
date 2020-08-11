@@ -56,7 +56,9 @@
         <DropdownToggle nav caret>Quests</DropdownToggle>
         <DropdownMenu right>
           {#each quests as quest}
-            <DropdownItem class="maps-link" href="/quests/{quest.name}">
+            <DropdownItem
+              class="maps-link"
+              onclick="location.href='/quests/{quest.name}'">
               {quest.name}
             </DropdownItem>
           {/each}
@@ -69,11 +71,15 @@
         <DropdownToggle nav caret>Maps</DropdownToggle>
         <DropdownMenu right>
           {#each maps as map}
-            <DropdownItem class="maps-link" href="/maps/{map.name}">
+            <DropdownItem
+              class="maps-link"
+              onclick="location.href='/maps/{map.name}'">
               {map.name}
             </DropdownItem>
           {/each}
-          <DropdownItem class="maps-link" href="/maps">All Maps</DropdownItem>
+          <DropdownItem class="maps-link" onclick="location.href='/maps'">
+            All Maps
+          </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     </Nav>
