@@ -2,6 +2,8 @@
   import { onMount } from "svelte";
 
   import guns from "./guns.js";
+  import names from "./maps/names.js";
+  import quests from "./quests/quests.js";
   import {
     Col,
     Container,
@@ -52,28 +54,58 @@
 </svelte:head>
 
 <Container>
-  {#each guns as guncat}
-    <Row class="">
-      <Col>
-        <!-- <h2>{guncat.name}</h2> -->
-        <Button color="warning" id={cleanUp(guncat.name)} class="mb-3">
-          {guncat.name}
-        </Button>
-        <UncontrolledCollapse toggler={cleanUp(guncat.name)}>
-          <Card class="my-3" body>
-            {#each guncat.guns as gun}
-              <div>
-                <a
-                  class="item-link"
-                  href={'/guns/' + cleanUp(guncat.name) + '/' + encodeUrl(gun)}>
-                  {gun}
-                </a>
-              </div>
-            {/each}
-          </Card>
-        </UncontrolledCollapse>
-      </Col>
-    </Row>
-  {/each}
+  <Row>
+    <Col md={4}>
+      <h3 class="display-3">Weapons</h3>
+
+      {#each guns as guncat}
+        <Row class="">
+
+          <!-- <h2>{guncat.name}</h2> -->
+          <Button color="warning" id={cleanUp(guncat.name)} class="mb-3">
+            {guncat.name}
+          </Button>
+          <UncontrolledCollapse toggler={cleanUp(guncat.name)}>
+            <Card class="my-3" body>
+              {#each guncat.guns as gun}
+                <div>
+                  <a
+                    class="item-link"
+                    href={'/guns/' + cleanUp(guncat.name) + '/' + encodeUrl(gun)}>
+                    {gun}
+                  </a>
+                </div>
+              {/each}
+            </Card>
+          </UncontrolledCollapse>
+
+        </Row>
+      {/each}
+    </Col>
+
+    <Col md={4}>
+      <h3 class="display-3">Maps</h3>
+      {#each names as map}
+        <Row class="my-2">
+          <Col>
+            <a class="btn btn-warning" href={'/maps/' + map.name}>{map.name}</a>
+          </Col>
+        </Row>
+      {/each}
+    </Col>
+
+    <Col md={4}>
+      <h3 class="display-3">Quests</h3>
+      {#each quests as quest}
+        <Row class="my-2">
+          <Col>
+            <a class="btn btn-warning" href={'/quests/' + quest.name}>
+              {quest.name}
+            </a>
+          </Col>
+        </Row>
+      {/each}
+    </Col>
+  </Row>
 
 </Container>
