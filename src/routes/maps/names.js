@@ -17,7 +17,7 @@ const maps = [
     players: "7-12",
     enemies: ["Scavs", "Reshala"],
     state: "Released",
-    maps: ["DormsLayout.jpg", "overview.png"],
+    maps: ["customs_new.png", "DormsLayout.jpg", "overview.png"],
   },
   {
     name: "woods",
@@ -27,7 +27,7 @@ const maps = [
     players: "8-12",
     enemies: ["Scavs", "Shturman"],
     state: "Released",
-    maps: ["overview.jpg"],
+    maps: ["overview.jpg", "woods_new.png"],
   },
   {
     name: "shoreline",
